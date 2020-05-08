@@ -53,10 +53,10 @@ public class Job {
         }
         String noData = "Data not available";
         String name = getName().equals("") ? noData : getName();
-        String employer = getEmployer().getValue() == null ? noData : getEmployer().getValue();
-        String location = getLocation().getValue() == null ? noData : getLocation().getValue();
-        String positionType = getPositionType().getValue() == null ? noData : getPositionType().getValue();
-        String coreCompetency = getCoreCompetency().getValue() == null ? noData : getCoreCompetency().getValue();
+        String employer = getEmployer().getValue().equals("") ? noData : getEmployer().getValue();
+        String location = getLocation().getValue().equals("") ? noData : getLocation().getValue();
+        String positionType = getPositionType().getValue().equals("") ? noData : getPositionType().getValue();
+        String coreCompetency = getCoreCompetency().getValue().equals("") ? noData : getCoreCompetency().getValue();
 
         return  " \nID: " + id +
                 "\nName: " + name  +
