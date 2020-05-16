@@ -58,13 +58,13 @@ public class Job {
         String positionType = getPositionType().getValue().equals("") ? noData : getPositionType().getValue();
         String coreCompetency = getCoreCompetency().getValue().equals("") ? noData : getCoreCompetency().getValue();
 
-        return  " \nID: " + id +
+        return  "\nID: " + id +
                 "\nName: " + name  +
                 "\nEmployer: " + employer +
                 "\nLocation: " + location +
                 "\nPosition Type: " + positionType +
                 "\nCore Competency: " + coreCompetency +
-                "\n ";
+                "\n";
     }
 
     public int getId() {
