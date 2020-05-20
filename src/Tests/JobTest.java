@@ -57,6 +57,7 @@ public class JobTest {
     @Test
     public void testForFirstAndLastBlankLinesInToString(){
         String newString = job3.toString();
+
         assertTrue(newString.charAt(0) == '\n');
         assertTrue(newString.charAt(newString.length()-1) == '\n');
     }
