@@ -46,6 +46,7 @@ public class JobTest {
     public void testJobsForEquality(){
         System.out.println(job3.getLocation().equals(job4.getLocation()));
         System.out.println(job3.getLocation().hashCode() + " - " + job4.getLocation().hashCode());
+        assertFalse(job3.equals(job4));
         assertFalse(job3.getId() == job4.getId());
         assertTrue(job3.getName().equals(job4.getName()));
         assertFalse(job3.getEmployer().hashCode() == job4.getEmployer().hashCode());
